@@ -1,13 +1,13 @@
 Saccadic Vision for Relational Reasoning
 ===
 
-Adam Harris, David McCaffary, Hannah Sheahan, Chris Summerfield**
+Adam Harris, David McCaffary, Hannah Sheahan, Chris Summerfield
 
 _HS and CS responsible for project inception_
 
 ---
 
-**Are the relationships between objects in a scene grounded in the actions an agent takes towards them?**
+**Is the learning of relationships between objects in a visual scene grounded in the actions an agent takes towards them?**
 
 We are investigating this question by:
 
