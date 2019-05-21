@@ -1,14 +1,13 @@
 Saccadic Vision for Relational Reasoning
 ===
 
-Are the relationships between objects in a scene grounded in the actions an agent takes towards them?
----
-
-**Adam Harris, David McCaffary, Hannah Sheahan, Chris Summerfield
+Adam Harris, David McCaffary, Hannah Sheahan, Chris Summerfield**
 
 _HS and CS responsible for project inception_
 
 ---
+
+**Are the relationships between objects in a scene grounded in the actions an agent takes towards them?**
 
 We are investigating this question by:
 
