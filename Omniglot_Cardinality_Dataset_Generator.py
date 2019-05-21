@@ -16,7 +16,7 @@ import os
 import pandas as pd
 
 
-num = 1000  # How many images do you want
+num = 10000  # How many images do you want
 WIDTH, HEIGHT = 500, 500  # Dimensions of image in pixels
 xaxis = [50, 150, 250, 350, 450]  # Possible x-axis positions where an image could be placed
 yaxis = [50, 150, 250, 350, 450]  # Possible y-axis positions where an image could be placed
@@ -58,6 +58,7 @@ For each x,y coordinate pair within that image, a second number, prop is generat
 If variable Prob is less than the threshold for that image, a random omniglot charachter is pasted
 in that location, with a randomly selected size and x,y jitter.
 
+The function to choose an arbitrary orientation has been
 '''
 
 for image in range(num):
@@ -84,6 +85,9 @@ for image in range(num):
                 path = omniglot[index]
                 character = Image.open(path)
 
+                #angle = np.random.randint(0, 360)
+                #shape = shape.rotate(angle, expand=1)
+
                 # X,y jitter to reduce to ouvert grid configuration (hardcoded bounds)
                 x_jitter, y_jitter = np.random.randint(-30, 30), np.random.randint(-30, 30)
 
@@ -96,11 +100,13 @@ for image in range(num):
                 position = [(xaxis[i] - (size)) + x_jitter, (yaxis[t] - size) + y_jitter, (xaxis[i] + size) + x_jitter, (yaxis[t] + size) + y_jitter]
                 img.paste(character, position, character)
 
-    # Connvertto greyscale an save
+    # Connvert to greyscale and save
     img = img.convert('L')
-    img.save(outputDirName + "/" + str(image + 1) + ".png")
+    img.save(outputDirName + "/Images/" + str(image + 1).zfill(5) + ".png")
+    print(label[image])
 
 # Print labels for dataset and save them to a csv
 print(label)
 df = pd.DataFrame(label)
 df.to_csv(outputDirName + '/labels.csv', index=False, header=False)
+
