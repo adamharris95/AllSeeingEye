@@ -3,7 +3,7 @@ Saccadic Vision for Relational Reasoning
 
 Adam Harris, David McCaffary, Hannah Sheahan, Chris Summerfield
 
-_HS and CS responsible for project inception_
+_HS and CS are responsible for project inception_
 
 ---
 
