@@ -11,7 +11,7 @@ _HS and CS responsible for project inception_
 
 We are investigating this question by:
 
-1) Exploring defeceits of standard CNNs and MLPs in learning contentent-independent structural elements (ie Cardinality) of a complex visual scene consisting of omniglot charachters 
+1) Exploring defeceits of standard CNNs and MLPs in learning contentent-independent structural elements (ie Cardinality) of a complex visual scene consisting of omniglot characters 
 
 2) Implementing a glimpse model that saccades over images based on a saliency map (Itti and Koch)
 
